@@ -26,3 +26,11 @@ function openLogin(){
 
 console.log("🚀 RN Creator AI Loaded Successfully"); 
 <script src="script.js"></script>
+    </body> 
+<nav class="navbar">
+  <a href="index.html">Home</a>
+  <a href="chat.html">AI Chat</a>
+  <a href="image.html">AI Image</a>
+  <a href="video.html">AI Video</a>
+  <a href="seo.html">SEO</a>
+</nav>
