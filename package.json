@@ -11,3 +11,16 @@
     "express": "^4.18.2"
   }
 }
+</body> 
+function generateSEO() {
+    let topic = document.getElementById("seoInput").value;
+
+    if (topic === "") {
+        alert("पहले कोई विषय लिखें।");
+        return;
+    }
+
+    document.getElementById("seoResult").innerHTML =
+        "<h3>SEO Keywords</h3>" +
+        "<p>" + topic + ", Trending, Viral, 2026, AI, YouTube SEO</p>";
+}
