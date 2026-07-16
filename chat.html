@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RN Creator AI - Chat</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#0f172a;
+color:white;
+display:flex;
+flex-direction:column;
+height:100vh;
+}
+
+header{
+background:#1e293b;
+padding:15px;
+text-align:center;
+font-size:24px;
+font-weight:bold;
+}
+
+#chatBox{
+flex:1;
+padding:20px;
+overflow-y:auto;
+}
+
+.message{
+background:#1e293b;
+padding:12px;
+border-radius:10px;
+margin-bottom:10px;
+}
+
+.inputArea{
+display:flex;
+padding:15px;
+background:#111827;
+}
+
+input{
+flex:1;
+padding:15px;
+border:none;
+border-radius:10px;
+font-size:16px;
+}
+
+button{
+margin-left:10px;
+padding:15px 25px;
+background:#2563eb;
+color:white;
+border:none;
+border-radius:10px;
+cursor:pointer;
+}
+</style>
+</head>
+
+<body>
+
+<header>🤖 RN Creator AI Chat</header>
+
+<div id="chatBox">
+<div class="message">
+👋 Welcome! Ask me anything.
+</div>
+</div>
+
+<div class="inputArea">
+<input id="userInput" type="text" placeholder="Type your message...">
+<button onclick="sendMessage()">Send</button>
+</div>
+
+<script>
+function sendMessage(){
+let input=document.getElementById("userInput");
+
+if(input.value.trim()=="") return;
+
+let chat=document.getElementById("chatBox");
+
+chat.innerHTML += `
+<div class="message">
+🧑 ${input.value}
+</div>
+
+<div class="message">
+🤖 AI Reply will come here...
+</div>
+`;
+
+input.value="";
+chat.scrollTop=chat.scrollHeight;
+}
+</script>
+
+</body>
+</html> 
+<a href="chat.html">AI Chat</a>
