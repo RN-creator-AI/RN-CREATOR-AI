@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RN Creator AI - Image Generator</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<h1>🎨 AI Image Generator</h1>
+<p>अपना प्रॉम्प्ट लिखें और इमेज बनाएं</p>
+</header>
+
+<div style="max-width:700px;margin:30px auto;text-align:center;padding:20px;">
+    <input
+        type="text"
+        id="prompt"
+        placeholder="जैसे: A futuristic city at sunset"
+        style="width:100%;padding:15px;font-size:18px;border-radius:10px;"
+    >
+
+    <br><br>
+
+    <button onclick="generateImage()" class="hero-btn">
+        Generate Image
+    </button>
+
+    <br><br>
+
+    <img
+        id="output"
+        src=""
+        style="max-width:100%;border-radius:15px;display:none;"
+    >
+</div>
+
+<script src="script.js"></script>
+
+</body>
+      </html> 
+
+function generateImage() {
+    alert("AI Image Generator जल्द जोड़ा जाएगा।");
+}
