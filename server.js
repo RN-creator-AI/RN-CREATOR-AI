@@ -15,3 +15,11 @@ const PORT = 3000;
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
 });
+</body> 
+<nav class="navbar">
+  <a href="index.html">Home</a>
+  <a href="chat.html">AI Chat</a>
+  <a href="image.html">AI Image</a>
+  <a href="video.html">AI Video</a>
+  <a href="seo.html">SEO</a>
+</nav>
